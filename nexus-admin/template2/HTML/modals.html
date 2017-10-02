@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from themesground.com/nexus-admin/template2/HTML/modals.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Oct 2017 16:15:10 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>Modals | Nexus - Responsive Bootstrap Admin Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="description" content="">
+<meta name="keywords" content="Nexus bootstrap template, Nexus admin, bootstrap,admin template, bootstrap admin,">
+<meta name="author" content="ThemesGround">
+
+<!-- Base Css Files -->
+<link href="assets/libs/jqueryui/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" />
+<link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="assets/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<link href="assets/libs/fontello/css/fontello.css" rel="stylesheet" />
+<link href="assets/libs/animate-css/animate.min.css" rel="stylesheet" />
+<link href="assets/libs/nifty-modal/css/component.css" rel="stylesheet" />
+<link href="assets/libs/ios7-switch/ios7-switch.css" rel="stylesheet" />
+<link href="assets/libs/pace/pace.css" rel="stylesheet" />
+<link href="assets/libs/sortable/sortable-theme-bootstrap.css" rel="stylesheet" />
+<link href="assets/libs/bootstrap-datepicker/css/datepicker.css" rel="stylesheet" />
+<link href="assets/libs/jquery-icheck/skins/all.css" rel="stylesheet" />
+<!-- Code Highlighter for Demo -->
+<link href="assets/libs/prettify/github.css" rel="stylesheet" />
+
+<!-- Extra CSS Libraries Start -->
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+<!-- Extra CSS Libraries End -->
+<link href="assets/css/style-responsive.css" rel="stylesheet" />
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="assets/img/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="assets/img/apple-touch-icon-152x152.png" />
+</head>
+<body class="fixed-left">
+<!-- Modal Start --> 
+<!-- Modal Task Progress -->
+<div class="md-modal md-3d-flip-vertical" id="task-progress">
+  <div class="md-content">
+    <h3><strong>Task Progress</strong> Information</h3>
+    <div>
+      <p>CLEANING BUGS</p>
+      <div class="progress progress-xs for-modal">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80&#37; Complete</span> </div>
+      </div>
+      <p>POSTING SOME STUFF</p>
+      <div class="progress progress-xs for-modal">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 65%"> <span class="sr-only">65&#37; Complete</span> </div>
+      </div>
+      <p>BACKUP DATA FROM SERVER</p>
+      <div class="progress progress-xs for-modal">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 95%"> <span class="sr-only">95&#37; Complete</span> </div>
+      </div>
+      <p>RE-DESIGNING WEB APPLICATION</p>
+      <div class="progress progress-xs for-modal">
+        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 100%"> <span class="sr-only">100&#37; Complete</span> </div>
+      </div>
+      <p class="text-center">
+        <button class="btn btn-danger btn-sm md-close">Close</button>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Logout -->
+<div class="md-modal md-just-me" id="logout-modal">
+  <div class="md-content">
+    <h3><strong>Logout</strong> Confirmation</h3>
+    <div>
+      <p class="text-center">Are you sure want to logout from this awesome system?</p>
+      <p class="text-center">
+        <button class="btn btn-danger md-close">Nope!</button>
+        <a href="login.html" class="btn btn-success md-close">Yeah, I'm sure</a> </p>
+    </div>
+  </div>
+</div>
+<!-- Modal End --> 
+<!-- 
+		=================================================================================================
+		All modals added here for the demo. You would of course just have one, dynamically created
+		=================================================================================================
+		--> 
+<!-- Modal fade in scale up -->
+<div class="md-modal md-fade-in-scale-up" id="md-fade-in-scale-up">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-fade-in-scale-up --> 
+<!-- Modal slide in right -->
+<div class="md-modal md-slide-in-right" id="md-slide-in-right">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-slide-in-right --> 
+<!-- Modal slide from bottom -->
+<div class="md-modal md-slide-from-bottom" id="md-slide-from-bottom">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-slide-from-bottom --> 
+<!-- Modal newspaper -->
+<div class="md-modal md-newspaper" id="md-newspaper">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-newspaper --> 
+<!-- Modal fall -->
+<div class="md-modal md-fall" id="md-fall">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-fall --> 
+<!-- Modal side fall -->
+<div class="md-modal md-side-fall" id="md-side-fall">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-side-fall --> 
+<!-- Modal slide stick top -->
+<div class="md-modal md-slide-stick-top" id="md-slide-stick-top">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-slide-stick-top --> 
+<!-- Modal 3d flip horizontal -->
+<div class="md-modal md-3d-flip-horizontal" id="md-3d-flip-horizontal">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-3d-flip-horizontal --> 
+<!-- Modal 3d flip vertical -->
+<div class="md-modal md-3d-flip-vertical" id="md-3d-flip-vertical">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-3d-flip-vertical --> 
+<!-- Modal 3d sign -->
+<div class="md-modal md-3d-sign" id="md-3d-sign">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-3d-sign --> 
+<!-- Modal super scaled -->
+<div class="md-modal md-super-scaled" id="md-super-scaled">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-super-scaled --> 
+<!-- Modal just me -->
+<div class="md-modal md-just-me" id="md-just-me">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-just-me --> 
+<!-- Modal 3d slit -->
+<div class="md-modal md-3d-slit" id="md-3d-slit">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-3d-slit --> 
+<!-- Modal rotate from bottom -->
+<div class="md-modal md-rotate-from-bottom" id="md-rotate-from-bottom">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-rotate-from-bottom --> 
+<!-- Modal rotate from left -->
+<div class="md-modal md-rotate-from-left" id="md-rotate-from-left">
+  <div class="md-content">
+    <h3>Modal Dialog</h3>
+    <div>
+      <p>This is a modal window. You can do the following things with it:</p>
+      <ul>
+        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+      </ul>
+      <p>
+        <button class="btn btn-danger md-close">Close me!</button>
+        <button class="btn btn-success md-close">Some button</button>
+      </p>
+    </div>
+  </div>
+  <!-- End div .md-content --> 
+</div>
+<!-- End div .md-modal .md-rotate-from-left --> 
+
+<!-- Begin page -->
+<div id="wrapper"> 
+  
+  <!-- Top Bar Start -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <div class="logo">
+        <h1><a href="#">Nexus</a></h1>
+      </div>
+    </div>
+    <!-- Button mobile view to collapse sidebar menu -->
+    <div class="navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-collapse2">
+          <button class="button-menu-mobile open-left"> <i class="fa fa-bars"></i> </button>
+          <h1 class="title">Modals</h1>
+          <ul class="nav navbar-nav navbar-right top-navbar">
+            <li> 
+              <!-- Search form -->
+              <form role="search" class="navbar-form">
+                <div class="form-group">
+                  <input type="text" placeholder="Search" class="form-control">
+                  <button type="submit" class="btn search-button"><i class="fa fa-search"></i></button>
+                </div>
+              </form>
+            </li>
+            <li class="dropdown notifications-menu hide-phone"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="label label-blue absolute">4</span></a>
+              <ul class="dropdown-menu">
+                <li class="header">You have 10 notifications</li>
+                <li> 
+                  <!-- inner menu: contains the actual data -->
+                  <div class="slimScrollDiv">
+                    <ul class="menu">
+                      <li> <a href="#"> <i class="fa fa-pencil"></i> 5 new customers joined today </a> </li>
+                      <li> <a href="#"> <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems </a> </li>
+                      <li> <a href="#"> <i class="fa fa-pencil"></i> 5 new customers joined </a> </li>
+                      <li> <a href="#"> <i class="fa fa-shopping-cart text-green"></i> 25 sales made </a> </li>
+                      <li> <a href="#"> <i class="fa fa-user text-red"></i> You changed your username </a> </li>
+                    </ul>
+                    <div class="slimScrollBar" style="width: 3px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 200px; background: rgb(0, 0, 0);"></div>
+                    <div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
+                  </div>
+                </li>
+                <li class="footer"><a href="#">View all</a></li>
+              </ul>
+            </li>
+            <li class="dropdown iconify hide-phone messages-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i><span class="label label-warning absolute">10</span></a>
+              <ul class="dropdown-menu">
+                <li class="header">You have 4 messages</li>
+                <li> 
+                  <!-- inner menu: contains the actual data -->
+                  <div class="slimScrollDiv">
+                    <ul class="menu">
+                      <li><!-- start message --> 
+                        <a href="#">
+                        <div class="pull-left"> <img src="images/users/user2-160x160.jpg" class="img-circle" alt="User Image"> </div>
+                        <h4> Support Team <small><i class="fa fa-clock-o"></i> 5 mins</small> </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                        </a> </li>
+                      <!-- end message -->
+                      <li> <a href="#">
+                        <div class="pull-left"> <img src="images/users/user3-128x128.jpg" class="img-circle" alt="User Image"> </div>
+                        <h4> Nexus Design Team <small><i class="fa fa-clock-o"></i> 2 hours</small> </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                        </a> </li>
+                      <li> <a href="#">
+                        <div class="pull-left"> <img src="images/users/user4-128x128.jpg" class="img-circle" alt="User Image"> </div>
+                        <h4> Developers <small><i class="fa fa-clock-o"></i> Today</small> </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                        </a> </li>
+                      <li> <a href="#">
+                        <div class="pull-left"> <img src="images/users/user3-128x128.jpg" class="img-circle" alt="User Image"> </div>
+                        <h4> Sales Department <small><i class="fa fa-clock-o"></i> Yesterday</small> </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                        </a> </li>
+                      <li> <a href="#">
+                        <div class="pull-left"> <img src="images/users/user4-128x128.jpg" class="img-circle" alt="User Image"> </div>
+                        <h4> Reviewers <small><i class="fa fa-clock-o"></i> 2 days</small> </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                        </a> </li>
+                    </ul>
+                    <div class="slimScrollBar" style="width: 3px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 95.2381px; background: rgb(0, 0, 0);"></div>
+                    <div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
+                  </div>
+                </li>
+                <li class="footer"><a href="#">See All Messages</a></li>
+              </ul>
+            </li>
+            <li class="dropdown tasks-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-tasks"></i> <span class="label label-danger absolute">9</span> </a>
+              <ul class="dropdown-menu">
+                <li class="header">You have 5 tasks</li>
+                <li> 
+                  <!-- inner menu: contains the actual data -->
+                  <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;">
+                    <ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
+                      <li><!-- Task item --> 
+                        <a href="#">
+                        <h3> Update software <small class="pull-right">47%</small> </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"> <span class="sr-only">20% Complete</span> </div>
+                        </div>
+                        </a> </li>
+                      <!-- end task item -->
+                      <li><!-- Task item --> 
+                        <a href="#">
+                        <h3> iphone Design <small class="pull-right">40%</small> </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"> <span class="sr-only">40% Complete</span> </div>
+                        </div>
+                        </a> </li>
+                      <!-- end task item -->
+                      <li><!-- Task item --> 
+                        <a href="#">
+                        <h3> Fix all bugs <small class="pull-right">60%</small> </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"> <span class="sr-only">60% Complete</span> </div>
+                        </div>
+                        </a> </li>
+                      <!-- end task item --> 
+                      <!-- end task item -->
+                    </ul>
+                    <div class="slimScrollBar" style="width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; background: rgb(0, 0, 0);"></div>
+                    <div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
+                  </div>
+                </li>
+                <li class="footer"> <a href="#">View all tasks</a> </li>
+              </ul>
+            </li>
+            <li class="dropdown topbar-profile"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="rounded-image topbar-profile-image"><img src="images/users/user-40.jpg"></span> Stephen Smith </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">My Profile</a></li>
+                <li><a href="#">Change Password</a></li>
+                <li><a href="#">Account Setting</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="icon-help-2"></i> Help</a></li>
+                <li><a href="lockscreen.html"><i class="icon-lock-1"></i> Lock me</a></li>
+                <li><a class="md-trigger" data-modal="logout-modal"><i class="icon-logout-1"></i> Logout</a></li>
+              </ul>
+            </li>
+            <li class="right-opener"> <a href="#" class=""><i class="fa fa-power-off" aria-hidden="true"></i></a> </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse --> 
+      </div>
+    </div>
+  </div>
+  <!-- Top Bar End --> 
+  <!-- Left Sidebar Start -->
+  <div class="left side-menu">
+            <div class="sidebar-inner slimscrollleft">
+                <!--- Profile -->
+                
+              
+                <div id="sidebar-menu">
+  <ul>
+    <li><a href='index-2.html'><i class="fa fa-home"></i> <span>Dashboard</span> </a>
+     
+    </li>
+    <li class='has_sub'><a href='javascript:void(0);'><i class="fa fa-flask"></i> <span>UI Elements</span> 
+    
+    <span class="pull-right"><i class="fa fa-angle-down"></i></span> <span class="label label-primary pull-right">4</span></a>
+      <ul>
+      	
+        <li><a href='buttons.html'><span>Buttons</span></a></li>
+        <li><a href='alerts.html'><span>Alerts</span></a></li>
+        <li><a href='icons.html'><span>Icons</span></a></li>
+        <li><a href='progress-bars.html'><span>Progress Bars</span></a></li>
+        <li><a href='notifications.html'><span>Notifications</span></a></li>
+        <li><a href='tabs-accordions.html'><span>Tabs & Accordions</span></a></li>
+       
+      </ul>
+    </li>
+    
+    <li class='has_sub'><a href='javascript:void(0);'><i class="fa fa-check-square-o"></i> <span>Forms</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+      <ul>
+        <li><a href='forms.html'><span>Form Elements</span></a></li>
+        <li><a href='form-wizard.html'><span>Form Wizard</span></a></li>
+        
+        <li><a href='form-validation.html'><span>Form Validation</span></a></li>
+        <li><a href='form-uploads.html'><span>File Uploads</span></a></li>
+      </ul>
+    </li>
+    
+    <li class='has_sub'><a href='javascript:void(0);'><i class="fa fa-th"></i> <span>Tables</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span> </a>
+      <ul>
+        <li><a href='tables.html'><span>Basic Tables</span></a></li>
+        <li><a href='datatables.html'><span>Data Tables</span></a></li>
+      </ul>
+    </li>
+     <li><a href='calendar.html'><i class="fa fa-calendar-check-o"></i> <span>Calendar</span>  <span class="label pull-right bg-red">3</span></a>
+    </li>
+    
+    <li class='has_sub'><a href='javascript:void(0);'><i class="fa fa-envelope-o"></i> <span>Mailbox</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span> <span class="label pull-right label-success">12</span></a>
+      <ul>
+        <li><a href='inbox.html'><span>Inbox</span></a></li>
+        <li><a href='read-message.html'><span>Email</span></a></li>
+        <li><a href='new-message.html'><span>New Message</span></a></li>
+      </ul>
+    </li>
+    
+    <li class='has_sub'><a href='javascript:void(0);'><i class="fa fa-bar-chart"></i> <span>Charts</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+      <ul>
+        <li><a href='sparkline-charts.html'><span>Sparkline Charts</span></a></li>
+        <li><a href='rickshaw-charts.html'><span>Rickshaw Charts</span></a></li>
+        <li><a href='morris-charts.html'><span>Morris Charts</span></a></li>
+        <li><a href='other-charts.html'><span>Other Charts</span></a></li>
+      </ul>
+    </li>
+    
+ <li><a href='grid.html'><i class="fa fa-columns"></i> <span>Grid</span></a></li>
+    <li><a href='gallery.html'><i class="fa fa-laptop"></i> <span>Gallery</span></a></li>
+    <li><a href='modals.html'><i class="fa fa-square-o"></i> <span>Modals</span></a></li>
+     <li><a href='typography.html'><i class="fa fa-font"></i> <span>Typography</span></a></li>
+    
+    <li class='has_sub'><a href='javascript:void(0);'><i class="fa fa-bookmark-o"></i> <span>Extras</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+      <ul>
+      	<li><a href='profile.html'><span>User Profile</span></a></li>
+        <li><a href='invoice.html'><span>Invoice</span></a></li>
+        
+        <li><a href='maintenance.html'><span>Maintenance</span></a></li>
+        <li class='has_sub'><a href='javascript:void(0);'><span>3 Level menu</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+          <ul>
+            <li><a href='javascript:void(0);'><span>Sub Item</span></a></li>
+          </ul>
+        </li>
+        <li class='has_sub'><a href='javascript:void(0);'><span>4 Level Menu</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+          <ul>
+            <li class='has_sub'><a href='javascript:void(0);'><span>Sub Item - level 3</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+              <ul>
+                <li><a href='javascript:void(0);'><span>Sub Item - level 4</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href='blank.html'><span>Blank Page</span></a></li>
+        <li><a href='login.html'><span>Login</span></a></li>
+        <li><a href='register.html'><span>Register</span></a></li>
+        <li><a href='lockscreen.html'><span>Lock Screen</span></a></li>
+        <li><a href='404.html'><span>404 Error</span></a></li>
+        </ul>
+    </li>
+    <li class="logout"><a href='#'><i class="fa fa-power-off"></i> <span>Logout</span> </a>
+    </li>
+  </ul>
+
+</div>
+
+
+   <div class="sidebar-plan">
+  Bandwidth<a href="#" class="link">60%</a>
+  <div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+  </div>
+</div>
+
+</div>           
+              
+
+
+        </div>
+            
+        </div>
+  <!-- Left Sidebar End --> <!-- Right Sidebar Start -->
+  <div class="right side-menu">
+    <ul class="nav nav-tabs nav-justified" id="right-tabs">
+      <li class="active"><a href="#feed" data-toggle="tab" title="Live Feed"><i class="icon-rss-2"></i></a></li>
+      <li><a href="#connect" data-toggle="tab" title="Chat"><i class="icon-chat"></i></a></li>
+      <li><a href="#settings" data-toggle="tab" title="Preferences"><i class="icon-wrench"></i></a></li>
+    </ul>
+    <div class="clearfix"></div>
+    <div class="tab-content">
+      <div class="tab-pane active" id="feed">
+        <div class="tab-inner slimscroller">
+          <div class="search-right">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <div class="right-toolbar"> <a href="javascript:;" class="pull-right">Settings <i class="icon-cog"></i></a>
+            <div class="clearfix"></div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="panel-group" id="collapse">
+            <div class="panel panel-default">
+              <div class="panel-heading bg-orange-1">
+                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#rnotifications"> <i class="icon-bell-2"></i> Notifications <span class="label bg-darkblue-1 pull-right">4</span> </a> </h4>
+              </div>
+              <div id="rnotifications" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <ul class="list-unstyled" id="notification-list">
+                    <li><a href="javascript:;"><span class="icon-wrapper"><i class="icon-video"></i></span> 1 Video Uploaded <span class="muted">12 minutes ago</span></a></li>
+                    <li><a href="javascript:;"><span class="icon-wrapper"><i class="icon-users-1"></i></span> 3 Users signed up <span class="muted">16 minutes ago</span></a></li>
+                    <li><a href="javascript:;"><span class="icon-wrapper"><i class="icon-picture-1"></i></span> 1 Video Uploaded <span class="muted">12 minutes ago</span></a></li>
+                    <li><a href="javascript:;"><span class="icon-wrapper"><i class="icon-hourglass-1"></i></span> Deadline for 1 project <span class="muted">12 minutes ago</span></a></li>
+                  </ul>
+                  <a class="btn btn-block btn-sm btn-warning">See all notifications</a> </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading bg-green-3">
+                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#remails"> <i class="icon-mail"></i> E-mails <span class="label bg-darkblue-1 pull-right">3</span> </a> </h4>
+              </div>
+              <div id="remails" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <ul class="list-unstyled" id="inbox-list">
+                    <li><a href="javascript:;"><span class="sender"><i class="icon-star text-yellow-2"></i> Kim Wilde</span> <span class="datetime">6 mins ago</span> <span class="title">You keep me hangin on</span> <span class="content">Where are you? I am waiting for 3 hours in the restaurant. I ate 3 hamburgers.</span> </a></li>
+                    <li><a href="javascript:;"><span class="sender">Tyler Durden</span> <span class="datetime">13 hours ago</span> <span class="title">Buy some soap from market before</span> <span class="content">We are crowded here. We need some more soap at home. Buy some before you come home.</span> </a></li>
+                    <li><a href="javascript:;"><span class="sender">John Bonomo</span> <span class="datetime">Yesterday</span> <span class="title">Late delivery</span> <span class="content">Hello, I ordered 15 box of viagra for a friend of mine but he still hasn't receive them.</span> </a></li>
+                  </ul>
+                  <a class="btn btn-block btn-sm btn-primary">Go to inbox</a> </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading bg-blue-1">
+                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#rupdates"> <i class="icon-signal-2"></i> Updates <span class="label bg-darkblue-1 pull-right">5</span> </a> </h4>
+              </div>
+              <div id="rupdates" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <ul class="list-unstyled" id="updates-list">
+                    <li><a href="javascript:;"><span class="icon-wrapper bg-green-1"><i class="icon-comment-1"></i></span> <b>David Guetta</b> came online <abbr title="15 seconds ago">just now</abbr>.</a></li>
+                    <li><a href="javascript:;"><span class="icon-wrapper bg-red-1"><i class="icon-user-3"></i></span> <b>Katy Perry</b> updated her profile <abbr title="4 mins ago">4 mins ago</abbr>.</a></li>
+                    <li><a href="javascript:;"><span class="icon-wrapper bg-blue-1"><i class="icon-twitter-2"></i></span> <b>4 tweets posted</b> with cronjob <abbr title="22 mins ago">22 mins ago</abbr>.</a></li>
+                    <li><a href="javascript:;"><span class="icon-wrapper bg-orange-3"><i class="icon-water"></i></span> <b>Adele</b> set fire to the rain <abbr title="43 mins ago">43 mins ago</abbr>.</a></li>
+                    <li><a href="javascript:;"><span class="icon-wrapper bg-pink-2"><i class="icon-heart-broken"></i></span> <b>Taylor Swift</b> learned that you are trouble <abbr title="3 hours ago">3 days ago</abbr>.</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="connect">
+        <div class="tab-inner slimscroller">
+          <div class="search-right">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <div class="panel-group" id="collapse">
+            <div class="panel panel-default" id="chat-panel">
+              <div class="panel-heading bg-darkblue-2">
+                <h4 class="panel-title"> <a data-toggle="collapse" href="#chat-coll"> <i class="icon-briefcase-1"></i> Colleagues <span class="label bg-darkblue-1 pull-right">14</span> </a> </h4>
+              </div>
+              <div id="chat-coll" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <ul class="list-unstyled" id="chat-list">
+                    <li><a href="javascript:;" class="online"><span class="chat-user-avatar"><img src="images/users/chat/1.html"></span> <span class="chat-user-name">Dorothy Simons</span><span class="chat-user-msg">I wish I was a bird in the sky</span></a></li>
+                    <li><a href="javascript:;" class="online"><span class="chat-user-avatar"><img src="images/users/chat/2.html"></span> <span class="chat-user-name">John Malkovich</span><span class="chat-user-msg">You were the traitor</span></a></li>
+                    <li><a href="javascript:;" class="online"><span class="chat-user-avatar"><img src="images/users/chat/3.html"></span> <span class="chat-user-name">Jessica Simons</span><span class="chat-user-msg">Where is my mind</span></a></li>
+                    <li><a href="javascript:;" class="away"><span class="chat-user-avatar"><img src="images/users/chat/4.html"></span> <span class="chat-user-name">Jack Stallman</span><span class="chat-user-msg">Away since 13:32</span></a></li>
+                    <li><a href="javascript:;" class="offline"><span class="chat-user-avatar"><img src="images/users/chat/5.html"></span> <span class="chat-user-name">Neil Armstrong</span><span class="chat-user-msg" title="I am flying to the moon and back">I am flying to the moon and back</span></a></li>
+                    <li><a href="javascript:;" class="offline"><span class="chat-user-avatar"><img src="images/users/chat/6.html"></span> <span class="chat-user-name">Hollywood Studios</span><span class="chat-user-msg">Yes he definitely is!</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default" id="chat-panel">
+              <div class="panel-heading bg-darkblue-2">
+                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> <i class="icon-heart-3"></i> Friends <span class="label bg-darkblue-1 pull-right">3</span> </a> </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  <ul class="list-unstyled" id="chat-list">
+                    <li><a href="javascript:;" class="online"><span class="chat-user-avatar"><img src="images/users/chat/1.html"></span> <span class="chat-user-name">Dorothy Simons</span><span class="chat-user-msg">I wish I was a bird in the sky</span></a></li>
+                    <li><a href="javascript:;" class="online"><span class="chat-user-avatar"><img src="images/users/chat/2.html"></span> <span class="chat-user-name">John Malkovich</span><span class="chat-user-msg">You were the traitor</span></a></li>
+                    <li><a href="javascript:;" class="online"><span class="chat-user-avatar"><img src="images/users/chat/3.html"></span> <span class="chat-user-name">Jessica Simons</span><span class="chat-user-msg" title="Eminem - The Monster ft. Rihanna"><i class="icon-play"></i> Eminem - The Monster ft. Rihanna</span></a></li>
+                    <li><a href="javascript:;" class="away"><span class="chat-user-avatar"><img src="images/users/chat/4.html"></span> <span class="chat-user-name">Jack Stallman</span><span class="chat-user-msg">Away since 13:32</span></a></li>
+                    <li><a href="javascript:;" class="offline"><span class="chat-user-avatar"><img src="images/users/chat/5.html"></span> <span class="chat-user-name">Neil Armstrong</span><span class="chat-user-msg" title="I am flying to the moon and back">I am flying to the moon and back</span></a></li>
+                    <li><a href="javascript:;" class="offline"><span class="chat-user-avatar"><img src="images/users/chat/6.html"></span> <span class="chat-user-name">Hollywood Studios</span><span class="chat-user-msg">Yes he definitely is!</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="settings">
+        <div class="tab-inner slimscroller">
+          <div class="col-sm-12">
+            <h3>Preferences</h3>
+            <div class="row">
+              <div class="col-xs-8"> Live data updates </div>
+              <div class="col-xs-4">
+                <input type="checkbox" class="ios-switch ios-switch-success ios-switch-sm" checked />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-8"> Live feeds </div>
+              <div class="col-xs-4">
+                <input type="checkbox" class="ios-switch ios-switch-success ios-switch-sm" checked />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-8"> Sync data to cloud </div>
+              <div class="col-xs-4">
+                <input type="checkbox" class="ios-switch ios-switch-success ios-switch-sm" checked />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-8"> Keep activity record </div>
+              <div class="col-xs-4">
+                <input type="checkbox" class="ios-switch ios-switch-danger ios-switch-sm" checked />
+              </div>
+            </div>
+            <h4>Other Settings</h4>
+            <div class="row">
+              <div class="col-xs-12">
+                <label class="checkboxw">
+                  <input type="checkbox" checked>
+                  Autosave settings</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <label class="checkboxw">
+                  <input type="checkbox">
+                  Always online</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Right Sidebar End --> 
+  <!-- Start right content -->
+  <div class="content-page"> 
+    <!-- ============================================================== --> 
+    <!-- Start Content here --> 
+    <!-- ============================================================== -->
+    <div class="content">
+      <div class="row">
+        <div class="col-md-12 portlets">
+          <div class="widget">
+            <div class="widget-header">
+              <h2>Bootstrap Modals (default)</h2>
+              <div class="additional-btn"> <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a> <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a> <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a> </div>
+            </div>
+            <div class="widget-content padding"> 
+              <!-- sample modal content -->
+              <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Modal Heading</h4>
+                    </div>
+                    <div class="modal-body">
+                      <h4>Text in a modal</h4>
+                      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                      <hr>
+                      <h4>Overflowing text to show scroll behavior</h4>
+                      <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                      <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                      <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                      <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                      <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                      <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                  <!-- /.modal-content --> 
+                </div>
+                <!-- /.modal-dialog --> 
+              </div>
+              <!-- /.modal --> 
+              <!--  Modal content for the above example -->
+              <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+                    </div>
+                    <div class="modal-body"> ... </div>
+                  </div>
+                  <!-- /.modal-content --> 
+                </div>
+                <!-- /.modal-dialog --> 
+              </div>
+              <!-- /.modal -->
+              <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
+                    </div>
+                    <div class="modal-body"> ... </div>
+                  </div>
+                  <!-- /.modal-content --> 
+                </div>
+                <!-- /.modal-dialog --> 
+              </div>
+              <!-- /.modal --> 
+              <!-- Button trigger modal -->
+              <button class="btn btn-primary" data-toggle="modal" data-target="#myModal"> Standard Modal </button>
+              <!-- Large modal -->
+              <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>
+              
+              <!-- Small modal -->
+              <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 portlets">
+          <div class="widget">
+            <div class="widget-header">
+              <h2>Super Modals</h2>
+              <div class="additional-btn"> <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a> <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a> <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a> </div>
+            </div>
+            <div class="widget-content padding">
+              <div class="table-responsive">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>Modal Fade In & Scale</td>
+                      <td><button data-modal="md-fade-in-scale-up" class="btn btn-default btn-sm md-trigger">Fade in &amp; Scale</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-fade-in-scale-up"</code></td>
+                    </tr>
+                    <tr>
+                      <td>Modal Slide In (Right)</td>
+                      <td><button data-modal="md-slide-in-right" class="btn btn-default btn-sm md-trigger">Slide in (right)</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-slide-in-right"</code></td>
+                    </tr>
+                    <tr>
+                      <td>Modal Slide In (Button)</td>
+                      <td><button data-modal="md-slide-from-bottom" class="btn btn-default btn-sm md-trigger">Slide in (bottom)</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-slide-from-bottom"</code></td>
+                    </tr>
+                    <tr>
+                      <td>Modal Newspaper</td>
+                      <td><button data-modal="md-newspaper" class="btn btn-default btn-sm md-trigger">Newspaper</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-newspaper"</code></td>
+                    </tr>
+                    <tr>
+                      <td>Modal Fall</td>
+                      <td><button data-modal="md-fall" class="btn btn-default btn-sm md-trigger">Fall</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-fall"</code></td>
+                    </tr>
+                    <tr>
+                      <td>Modal Side Fall</td>
+                      <td><button data-modal="md-side-fall" class="btn btn-default btn-sm md-trigger">Side Fall</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-side-fall"</code></td>
+                    </tr>
+                    <tr>
+                      <td>Modal Sticky Up</td>
+                      <td><button data-modal="md-slide-stick-top" class="btn btn-default btn-sm md-trigger">Sticky Up</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-slide-stick-top"</code></td>
+                    </tr>
+                    <tr>
+                      <td>Modal 3D Flip (Horizontal)</td>
+                      <td><button data-modal="md-3d-flip-horizontal" class="btn btn-default btn-sm md-trigger">3D Flip (horizontal)</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-3d-flip-horizontal"</code></td>
+                    </tr>
+                    <tr>
+                      <td>Modal 3D Flip (Vertical)</td>
+                      <td><button data-modal="md-3d-flip-vertical" class="btn btn-default btn-sm md-trigger">3D Flip (vertical)</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-3d-flip-vertical"</code></td>
+                    </tr>
+                    <tr>
+                      <td>Modal 3D Sign</td>
+                      <td><button data-modal="md-3d-sign" class="btn btn-default btn-sm md-trigger">3D Sign</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-3d-sign"</code></td>
+                    </tr>
+                    <tr>
+                      <td>Modal Super Scaled</td>
+                      <td><button data-modal="md-super-scaled" class="btn btn-default btn-sm md-trigger">Super Scaled</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-super-scaled"</code></td>
+                    </tr>
+                    <tr>
+                      <td>Modal Just Me</td>
+                      <td><button data-modal="md-just-me" class="btn btn-default btn-sm md-trigger">Just Me</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-just-me"</code></td>
+                    </tr>
+                    <tr>
+                      <td>Modal 3D Slit</td>
+                      <td><button data-modal="md-3d-slit" class="btn btn-default btn-sm md-trigger">3D Slit</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-3d-slit"</code></td>
+                    </tr>
+                    <tr>
+                      <td>Modal 3D Rotate Bottom</td>
+                      <td><button data-modal="md-rotate-from-bottom" class="btn btn-default btn-sm md-trigger">3D Rotate Bottom</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-rotate-from-bottom"</code></td>
+                    </tr>
+                    <tr>
+                      <td>Modal 3D Rotate In Left</td>
+                      <td><button data-modal="md-rotate-from-left" class="btn btn-default btn-sm md-trigger">3D Rotate In Left</button></td>
+                      <td><code>class = "md-trigger" data-modal = "md-rotate-from-left"</code></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================================================== --> 
+    <!-- End content here --> 
+    <!-- ============================================================== --> 
+    
+  </div>
+  <!-- End right content --> 
+  
+</div>
+<!-- End of page --> 
+<!-- the overlay modal element -->
+<div class="md-overlay"></div>
+<!-- End of eoverlay modal --> 
+<script>
+		var resizefunc = [];
+	</script> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="assets/libs/jquery/jquery-1.11.1.min.js"></script> 
+<script src="assets/libs/bootstrap/js/bootstrap.min.js"></script> 
+<script src="assets/libs/jqueryui/jquery-ui-1.10.4.custom.min.js"></script> 
+<script src="assets/libs/jquery-ui-touch/jquery.ui.touch-punch.min.js"></script> 
+ 
+<script src="assets/libs/jquery-animate-numbers/jquery.animateNumbers.js"></script> 
+<script src="assets/libs/ios7-switch/ios7.switch.js"></script> 
+<script src="assets/libs/fastclick/js/fastclick.js"></script> 
+<script src="assets/libs/jquery-blockui/jquery.blockUI.js"></script> 
+<script src="assets/libs/bootstrap-bootbox/bootbox.min.js"></script> 
+<script src="assets/libs/jquery-slimscroll/jquery.slimscroll.js"></script> 
+<script src="assets/libs/jquery-sparkline/jquery-sparkline.js"></script> 
+<script src="assets/libs/nifty-modal/js/classie.js"></script> 
+<script src="assets/libs/nifty-modal/js/modalEffects.js"></script> 
+<script src="assets/libs/sortable/sortable.min.js"></script> 
+<script src="assets/libs/bootstrap-fileinput/bootstrap.file-input.js"></script> 
+<script src="assets/libs/bootstrap-select/bootstrap-select.min.js"></script> 
+<script src="assets/libs/bootstrap-select2/select2.min.js"></script> 
+<script src="assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<script src="assets/libs/pace/pace.min.js"></script> 
+<script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.js"></script> 
+<script src="assets/libs/jquery-icheck/icheck.min.js"></script> 
+
+<!-- Demo Specific JS Libraries --> 
+<script src="assets/libs/prettify/prettify.js"></script> 
+<script src="assets/js/init.js"></script>
+</body>
+
+<!-- Mirrored from themesground.com/nexus-admin/template2/HTML/modals.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Oct 2017 16:15:17 GMT -->
+</html>
