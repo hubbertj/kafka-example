@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<heah>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Simple Kafka | Chat</title>
+</heah>
+
+<body>
+    <div class="container">
+        <div class="col-xs-3 pull-left">
+            <a class="btn btn-secondary btn-block" href="/">Home</a>
+        </div>
+        <div class="col-xs-12">
+            <h1>Simple chat using kafka</h1>
+        </div>
+        <div class="col-xs-12">&nbsp;</div>
+        <div class="col-xs-12">
+            <div id="alerts"></div>
+        </div>
+        <form class="form" name="chatEnterForm" id="chat-enter-form">
+            <div class="form-group row">
+                <label for="example-text-input" class="col-xs-2 col-form-label">Topic</label>
+                <div class="col-xs-10">
+                    <input class="form-control" type="text" placeholder="topic" name="topic" id="topic-input">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3 pull-right">
+                    <button class="btn btn-block btn-secondary">Start</button>
+                </div>
+            </div>
+        </form>
+        <div id="page-content"></div>
+    </div>
+    <script type="html/tpl" id="start-chat">
+        <div class="col-xs-12">
+            <label for="exampleTextarea">Chat Topic: <span id="topic">{topic}</span></label>
+            <textarea class="form-control" id="exampleTextarea" rows="20"></textarea>
+        </div>
+        <div class="col-xs-12">&nbsp;</div>
+        <form class="col-xs-12" name="chatMessageForm" id="chat-message-form">
+            <div class="row">
+                <div class="col-xs-10">
+                    <input class="form-control" name="message" placeholder="chat" type="text" id="chat-message">
+                </div>
+                <div class="col-xs-2">
+                    <button type="submit" class="btn btn-block btn-primary">send</button>
+                </div>
+            </div>
+        </form>
+    </script>
+</body>
+<footer></footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+window.config = {
+    https: { chatMessage: "/chat-message" },
+    server: '127.0.0.1:8000'
+}
+
+window.Extra = {
+    clear: function() {
+        $("#alerts").removeClass().text("");
+    }
+}
+
+// A $( document ).ready() block.
+$(document).ready(function() {
+    console.log("ready! to start chating");
+});
+
+var loadTemplate = function(tmpl, model){
+    for(var mo in model){
+        tmpl = tmpl.replace(/{topic}/g, model[mo]);
+    }
+    $('#page-content').html(tmpl);
+};
+
+var getChatMessages = function(topic){
+    var data = {
+        topic: topic
+    };
+    $.ajax({
+        type: 'GET',
+        url: config.https.chatMessage,
+        data: data,
+        dataType: "json",
+        success: function(resultData){ 
+            console.log(resultData);
+
+        },
+        error: function(err){
+            console.error(err);
+            $("#alerts")
+            .addClass("alert alert-danger")
+            .text(err.statusText);
+
+            setTimeout('Extra.clear()', 3000);
+        }
+    });
+
+};
+
+var submitChat = function(){
+    var inputs = $("#chat-message-form input");
+    var topic = $("#topic").text();
+   
+    var data = {
+        topic: topic
+    };
+
+    inputs.each(function(index, element) {
+        var name = $(element).attr('name');
+        if (name != null) {
+            data[name] = $(element).val();
+        }
+    });
+
+    if(data.hasOwnProperty('message') && data.message != null && data.message !== ""){
+        $("#chat-message").val("");
+
+        $.ajax({
+        type: 'POST',
+        url: config.https.chatMessage,
+        data: data,
+        dataType: "json",
+        success: function(resultData){ 
+            console.log("chat posted Complete");
+        },
+        error: function(err){
+            console.error(err);
+            $("#alerts")
+            .addClass("alert alert-danger")
+            .text(err.statusText);
+
+            setTimeout('Extra.clear()', 3000);
+        }
+    });
+
+    }else{
+        $("#alerts")
+            .addClass("alert alert-danger")
+            .text("Enter a message please..!");
+
+        setTimeout('Extra.clear()', 3000);
+    }
+    return false;
+};
+
+$("#chat-enter-form").submit(function() {
+    var inputs = $("#chat-enter-form input");
+    var data = {};
+
+    inputs.each(function(index, element) {
+        var name = $(element).attr('name');
+        if (name != null) {
+            data[name] = $(element).val();
+        }
+    });
+
+    if(data.hasOwnProperty('topic') && data.topic != null && data.topic !== ""){
+        $("#topic-input").val("");
+        var model = {
+            topic: data.topic
+        };
+        var tpl = $('#start-chat').html();
+        loadTemplate(tpl, model);
+        getChatMessages(model.topic);
+        $("#chat-message-form").submit(submitChat);
+    }else{
+        $("#alerts")
+            .addClass("alert alert-danger")
+            .text("we need a topic entered!");
+
+        setTimeout('Extra.clear()', 3000);
+    }
+    return false;
+});
+</script>
+
+</html>
